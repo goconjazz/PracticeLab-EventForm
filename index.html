@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style type="text/css">
+        label {
+            font: normal 25px courier bold !important;
+        }
+
+        
+    </style>
+
+    
+
+</head>
+<body>
+    <center>
+    <form onsubmit="return validate()">
+    <div class="event1">
+    <label>Event Type: </label>
+    <select id="TYPE" name="eventtype" required>
+        <option value="pick">What type of event would you like to create?</option>
+        <option value="business">Seminar</option>
+        <option value="regular">Conference</option>
+        <option value="special">Workshop</option>
+    </select>
+    </div>
+    <br>
+    <div class="event2">
+        <label>Event Title:</label> 
+        <input type="text" name="eventname" id="TITLE" required>
+    </div>
+    <br>
+    <div class="event3">
+        <label>Event Dates: </label>
+        <input id="WHEN" type="date" name="eventwhen" required>
+        <label>to</label>
+        <input id="UNTILWHEN" type="date" name="eventuntilwhen" required>
+</div>
+<br>
+<div class="event4">
+    <label>Post Dates: </label>
+    <input id="POST" type="date" name="eventpost" required>
+</div>
+<br>
+<div class="checkbox">
+    <input type="checkbox" name="cb1">
+    <label for="checkbox1"> Is Registration required?</label><br>
+    <br>
+
+    <input type="checkbox" name="cb2">
+    <label for="checkbox1"> Is this event associated with any Family programs?</label>
+    <br>
+<br>
+    <input type="checkbox" name="cb3">
+    <label for="checkbox1"> Upon registration completion, are users to receive an auto generated email?</label>
+    <br>
+<br>
+    <input type="checkbox" name="cb4">
+    <label for="checkbox1"> Is there a point of contact?</label><br>
+    <br>
+
+    
+    <input type="checkbox" name="cb5">
+    <label for="checkbox1"> Is there a Hosting command Point of contact?</label><br>
+    <br>
+
+    <input id="Save" class="save" type="submit" value="Save" onsubmit="validate()">
+    <input id="Reset" class="cancel" type="reset" value="Cancel">
+</div>
+
+
+</form>
+</center>
+</body>
+</html>
